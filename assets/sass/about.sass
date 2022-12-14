@@ -1,0 +1,58 @@
+@use 'variables'
+@import "container"
+@import "button"
+
+.about
+    // background-color: gray
+    width: 100%
+
+    &__container2
+        @include container2
+        gap: 10px
+        padding: 80px 20px
+        // background-color: tomato
+    &__col:nth-child(1)
+        // background-color: green
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        gap: 15px
+        padding: 0 100px 0 0
+    &__col:nth-child(2)
+        // background-color: green
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+    &__header
+        // background-color: green
+        @include container
+        text-align: center
+        font-size: 80px
+        color: variables.$third-color
+        opacity: 0.4
+        position: relative
+    &__header::after
+        // background-color: red
+        content: 'Resgatando Amor'
+        position: absolute
+        left: 35%
+        font-size: 60px
+        font-family: 'Brush Script MT'
+        top: 40%
+        letter-spacing: 0.08em
+    &__h2
+        color: variables.$second-color
+        font-size: variables.$text_small
+    &__text
+        color: variables.$fourth-color
+        line-height: 35px
+        font-size: variables.$text_small
+    &__img:nth-child(1)
+        width: 640px
+        position: absolute
+        z-index: 99997
+    &__img:nth-child(2)
+        width: 500px
+        z-index: 99998

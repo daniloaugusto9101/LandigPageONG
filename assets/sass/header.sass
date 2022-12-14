@@ -1,0 +1,54 @@
+@use 'variables'
+@import "container"
+
+.header
+    // background-color: tomato
+    width: 100%
+    position: fixed
+    border-bottom: 1px solid variables.$fourth-color
+    padding: 20px 0px
+    z-index: 99999
+    top: 0
+    left: 0
+    background-color: variables.$color-ligth
+
+    &__container
+        @include container
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        // background-color: green
+        
+        .logo
+            &__link
+                // background-color: green
+                display: flex
+                align-items: center
+                gap: 40px
+                flex-wrap: wrap
+
+            &__img
+                width: 70px
+            &__title
+                font-size: variables.$text_small
+                color: variables.$fourth-color
+                text-transform: uppercase
+                font-weight: bold
+        
+        .navigation
+            .menu
+                // background-color: green
+                height: 100%
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                gap: 5px
+                &__link
+                    // background-color: gray
+                    font-size: variables.$text_small
+                    padding: 10px 20px
+                    color: variables.$fourth-color
+                    transition: all .3s
+                    &:hover
+                        color: variables.$second-color
+
