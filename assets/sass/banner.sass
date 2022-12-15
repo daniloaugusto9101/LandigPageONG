@@ -1,0 +1,16 @@
+@use 'variables'
+@import "container"
+
+.banner
+    background-color: gray
+    width: 100%
+    background-color: variables.$first-color
+
+    &__container
+        @include container
+        font-size: variables.$text-paragraph
+        padding: 40px 20px
+    &__text
+        text-align: center
+        color: variables.$color-ligth
+        line-height: 51px

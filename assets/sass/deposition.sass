@@ -1,0 +1,44 @@
+@use 'variables'
+@import "container"
+
+.deposition
+    width: 100%
+
+    &__container
+        background-color: gray
+        @include container
+        display: flex
+        flex-direction: column
+        // align-items: center
+        gap: 80px
+        padding: 50px 20px
+    &__header
+        // background-color: tomato
+        width: 100%
+        text-align: center
+    &__title
+        font-size: variables.$text_medium2
+        color: variables.$third-color
+        margin-bottom: 30px
+    &__text
+        color: variables.$fourth-color
+        font-size: variables.$text_small
+        line-height: 38px
+    &__cards
+        // background-color: green
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+        gap: 20px
+        padding: 0 60px
+
+        .card
+            border: 1px solid variables.$first-color
+            padding: 40px
+            border-radius: 16px
+            background: rgba(249, 232, 255, 0.5)
+            font-size: variables.$text_small
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 10px
