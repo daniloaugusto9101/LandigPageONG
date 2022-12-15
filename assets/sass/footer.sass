@@ -1,0 +1,14 @@
+@use 'variables'
+@import "container"
+
+.footer
+    // background-color: gray
+    border-top: 1px solid variables.$second-color
+    width: 100%
+    &__container
+        // background-color: tomato
+        @include container
+        padding: 50px 20px
+    &__text
+        font-size: variables.$text-paragraph
+        color: variables.$fourth-color
