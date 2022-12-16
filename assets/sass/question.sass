@@ -24,7 +24,7 @@
         // display: grid
         // grid-template-columns: repeat(auto-fit, minmax(952px, 1fr))
         width: 952px
-        .card
+        .cardP
             padding: 15px
             width: 100%
             color: variables.$fourth-color
@@ -35,12 +35,17 @@
                 margin-bottom: 15px
             &__title
                 font-size: variables.$text_sz5
+            &__icon
+                cursor: pointer
+                // color: black
             &__line
                 // border-color: variables.$fourth-color
             &__footer
                 margin-top: 15px
+                transition: .3s
+                // height: 10px
                 display: none
-
-
-        .card--aberto .card__footer
+                // display: none
+        .card--aberto .cardP__footer
             display: block
+            // height: 100px

@@ -1,7 +1,7 @@
-const cards = document.querySelectorAll(".card")
+const cards = document.querySelectorAll(".cardP")
 
 cards.forEach(function(card) {
-    const icon = card.querySelector(".card-icon");
+    const icon = card.querySelector(".cardP__icon");
     icon.addEventListener("click", function(item){
 
         cards.forEach(function(item) {
