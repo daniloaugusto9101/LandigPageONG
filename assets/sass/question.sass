@@ -19,29 +19,28 @@
     &__btn
         @include button
     
-    .cards
+    &__cards
         // background-color: green
-        max-width: 950px
+        // display: grid
+        // grid-template-columns: repeat(auto-fit, minmax(952px, 1fr))
+        width: 952px
+        .card
+            padding: 15px
+            width: 100%
+            color: variables.$fourth-color
+            &__header
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 15px
+            &__title
+                font-size: variables.$text_sz5
+            &__line
+                // border-color: variables.$fourth-color
+            &__footer
+                margin-top: 15px
+                display: none
 
-// .card
-//     background: white
-//     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.166)
-//     padding: 15px
-//     min-width: 600px
-//     &__header
-//         display: flex
-//         justify-content: space-between
-//         align-items: center
-//         margin-bottom: 15px
-//     &__line
-//         border:1px solid rgba(0, 0, 0, 0.142)
-//     &__footer
-//         margin-top: 15px
-//         display: none
 
-
-// .card--aberto .card__footer
-//     display: block
-
-//     .card-icon
-//     font-size: 25px
+        .card--aberto .card__footer
+            display: block

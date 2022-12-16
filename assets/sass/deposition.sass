@@ -19,13 +19,13 @@
     &__title
         font-size: variables.$text_sz1
         color: variables.$third-color
-        margin-bottom: 30px
+        margin-bottom: 20px
     &__text
         color: variables.$fourth-color
         font-size: variables.$text_sz4
         line-height: 38px
     &__cards
-        // background-color: green
+        // background-color: green 
         width: 100%
         display: grid
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
@@ -34,11 +34,19 @@
 
         .card
             border: 1px solid variables.$first-color
-            padding: 40px
+            padding: 30px
             border-radius: 16px
             background: rgba(249, 232, 255, 0.5)
+            backdrop-filter: blur(4px)
             font-size: variables.$text_sz3
             display: flex
             flex-direction: column
             align-items: center
             gap: 10px
+            &__text
+                font-size: variables.$text_sz4
+                color: variables.$fourth-color
+                font-weight: bold
+            &__person
+                font-size: variables.$text_sz6
+                color: variables.$first-color
