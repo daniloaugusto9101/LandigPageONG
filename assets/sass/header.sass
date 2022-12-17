@@ -11,14 +11,20 @@
     top: 0
     left: 0
     background-color: variables.$color-ligth
+    transition: 0.6s
+    height: 120px
+
+    &__sticky
+        height: 80px
+        padding: 0px
 
     &__container
+        // background-color: green
         @include container
         display: flex
         justify-content: space-between
         flex-wrap: wrap
         padding: 0px 20px
-        // background-color: green
         
         .logo
             &__link
