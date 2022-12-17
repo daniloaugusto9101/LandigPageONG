@@ -8,30 +8,39 @@
     width: 100%
     background-image: url(../img/home-bg.png)
 
-    &__container2
+    &__container
         // background-color: red
-        @include container2
+        @include container
+        display: flex
+        flex-wrap: wrap-reverse
         gap: 10px
-        padding: 40px 20px
+        // padding: 40px 20px
+
     &__col:nth-child(1)
         // background-color: green
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: flex-start
-        gap: 15px
+        flex: 1 1 600px
+        padding: 50px 0 0 0
+        // display: flex
+        // flex-direction: column
+        // justify-content: center
+        // align-items: flex-start
+        // gap: 15px
     &__col:nth-child(2)
+        // flex: 1 1 300px
         // background-color: blue
         display: flex
         align-items: center
         justify-content: flex-end
+
     &__img
         // background-color: blue
-        // width: 200px
+        // width: 100%
+        // width: clamp(35em, 35em + 1vw, 30em)
+        width: max(300px, 30vw)
     &__title
-        font-size: variables.$text_sz0
-        // font-size: 3.5rem
-        line-height: 90px
+        // font-size: variables.$text_sz0
+        // font-size: clamp(1em, 2em + 1vw, 3.5em)
+        font-size: max(2em, 3vw)
         color: variables.$fourth-color
         opacity: 0.7
         font-family: Baloo2-bold
@@ -39,5 +48,6 @@
         line-height: 38px
         color: variables.$fourth-color
         font-size: variables.$text_sz4
+        margin-bottom: 40px
     &__btn
          @include button 
