@@ -52,6 +52,27 @@ cards.forEach(function(card) {
     })
 });
 
+// Efeito Scrol revel
+// Window.sr = ScrollReveal({
+//     reset: true,
+//     distance: '60px',
+//     duration: 2000,
+//     delay: 400
+// });
+
+// sr.reveal('.home__title, .home__text, .home__btn, .about__h2, .about__text, .adoption__title,.deposition__title, .deposition__title, .question__title', {
+//     delay: 400,
+//     origin: 'left'
+// });
+// sr.reveal('.home__img, .about__img2, .adoption__text, .deposition__text, .deposition__cards, .question__cards ', {
+//     delay: 400,
+//     origin: 'right'
+// });
+// sr.reveal('.about__img1, .banner__text, .footer__container', {
+//     delay: 400,
+//     origin: 'bottom'
+// });
+
 
 
 
