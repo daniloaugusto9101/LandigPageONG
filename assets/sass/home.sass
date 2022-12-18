@@ -9,7 +9,7 @@
     background-image: url(../img/home-bg.png)
 
     &__container
-        // background-color: red
+        // background-color: tomato
         @include container
         display: flex
         flex-wrap: wrap-reverse
@@ -45,9 +45,10 @@
         opacity: 0.7
         font-family: Baloo2-bold
     &__text
-        line-height: 38px
+        // line-height: 38px
         color: variables.$fourth-color
-        font-size: variables.$text_sz4
+        // font-size: variables.$text_sz4
+        font-size: max(1.5em, 1vw)
         margin-bottom: 40px
     &__btn
          @include button 

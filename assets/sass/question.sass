@@ -7,14 +7,19 @@
     width: 100%
     &__container
         // background-color: tomato
-        @include container
-        padding: 50px 20px
+        // @include container
+
+        max-width: 965px
+        margin: 0 auto
+        padding: 40px 20px
+        // padding: 0 15em
         display: flex
         flex-direction: column
         align-items: center
         gap: 50px
     &__title
-        font-size: variables.$text_sz1
+        // font-size: variables.$text_sz1
+        // font-size: max(2em, 3vw)
         color: variables.$third-color
     &__btn
         @include button
@@ -23,7 +28,10 @@
         // background-color: green
         // display: grid
         // grid-template-columns: repeat(auto-fit, minmax(952px, 1fr))
-        width: 952px
+        width: 100%
+        // width: 50em
+        // display: flex
+        // flex-direction: column
         .cardP
             padding: 15px
             width: 100%

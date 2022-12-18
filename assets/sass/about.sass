@@ -5,43 +5,42 @@
 .about
     // background-color: gray
     width: 100%
+    padding: 100px 0px
+    // margin-bottom: 50px
 
-    &__container2
-        @include container2
-        gap: 10px
-        padding: 80px 20px
+    &__container
         // background-color: tomato
+        @include container
+        display: flex
+        flex-wrap: wrap-reverse
+        gap: 10px
     &__col:nth-child(1)
         // background-color: green
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: flex-start
-        gap: 15px
-        padding: 0 100px 0 0
+        flex: 1 1 650px
+        padding: 50px 0 0 0
     &__col:nth-child(2)
         // background-color: green
-        position: relative
         display: flex
-        justify-content: center
         align-items: center
+        justify-content: flex-end
     &__header
         // background-color: green
-        @include container
-        text-align: center
-        font-size: 80px
+        @include container        
         color: variables.$third-color
-        opacity: 0.4
         position: relative
-    &__header::after
-        // background-color: red
-        content: 'Resgatando Amor'
+        padding: 0px 20px
+        width: 100%
+    &__title
+        font-size: max(2em, 8vw)
+        opacity: 0.4
+        text-align: center
+    &__subtitle
         position: absolute
-        left: 35%
-        font-size: 60px
+        font-size: max(1em, 3vw)
         font-family: 'Brush Script MT'
-        top: 40%
-        letter-spacing: 0.08em
+        font-weight: normal
+        top: max(1.6em, 6vw)
+        left: 8em
     &__h2
         color: variables.$second-color
         font-size: variables.$text_sz3
@@ -50,10 +49,5 @@
         line-height: 38px
         font-size: variables.$text_sz4
         opacity: 0.7
-    &__img:nth-child(1)
-        width: 640px
-        position: absolute
-        z-index: 99997
-    &__img:nth-child(2)
-        width: 500px
-        z-index: 99998
+    &__img
+        width: max(320px, 30vw)
