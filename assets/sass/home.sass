@@ -4,7 +4,7 @@
 @import "paragraph"
 
 .home
-    background-color: gray
+    // background-color: gray
     margin: 120px 0 0 0
     width: 100%
     background-image: url(../img/home-bg.png)
@@ -19,7 +19,7 @@
 
     &__col:nth-child(1)
         // background-color: green
-        flex: 1 1 300px
+        flex: 1 1 380px
         padding: 50px 0 0 0
         // display: flex
         // flex-direction: column
@@ -37,7 +37,7 @@
         // background-color: blue
         // width: 100%
         // width: clamp(35em, 35em + 1vw, 30em)
-        width: max(300px, 30vw)
+        width: max(280px, 30vw)
     &__title
         // font-size: variables.$text_sz0
         // font-size: clamp(1em, 2em + 1vw, 3.5em)
@@ -48,6 +48,6 @@
     &__text
         @include paragraph
         // background-color: red
-        margin-bottom: 40px
+        margin-bottom: 2.5em
     &__btn
          @include button 
