@@ -1,6 +1,7 @@
 @use 'variables'
 @import "container"
 @import "button"
+@import "paragraph"
 
 
 .adoption
@@ -28,11 +29,7 @@
         margin-bottom: 20px
         opacity: 0.9
     &__text
-        color: variables.$fourth-color
-        // font-size: variables.$text_sz4
-        font-size: max(1.5em, 1vw)
-        line-height: 38px
-        pacity: 0.7
+        @include paragraph
     &__cards
         // background-color: green
         width: 100%

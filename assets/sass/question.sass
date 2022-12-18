@@ -1,6 +1,7 @@
 @use 'variables'
 @import "container"
 @import "button"
+@import "paragraph"
 
 .question
     // background-color: gray
@@ -8,7 +9,6 @@
     &__container
         // background-color: tomato
         // @include container
-
         max-width: 965px
         margin: 0 auto
         padding: 40px 20px
@@ -42,7 +42,9 @@
                 align-items: center
                 margin-bottom: 15px
             &__title
-                font-size: variables.$text_sz5
+                // font-size: variables.$text  _sz5
+                font-size: max(1.5em, 1vw)
+                font-weight: normal
             &__icon
                 cursor: pointer
                 // color: black
@@ -54,6 +56,7 @@
                 // height: 10px
                 display: none
                 // display: none
+                @include paragraph
         .card--aberto .cardP__footer
             display: block
             // height: 100px

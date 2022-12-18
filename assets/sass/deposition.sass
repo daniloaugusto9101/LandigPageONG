@@ -1,5 +1,6 @@
 @use 'variables'
 @import "container"
+@import "paragraph"
 
 .deposition
     width: 100%
@@ -22,10 +23,7 @@
         color: variables.$third-color
         margin-bottom: 20px
     &__text
-        color: variables.$fourth-color
-        // font-size: variables.$text_sz4
-        font-size: max(1.5em, 1vw)
-        line-height: 38px
+        @include paragraph
     &__cards
         // background-color: green 
         width: 100%
