@@ -12,7 +12,9 @@
 
     <!-- CSS compressed -->
     <link rel="stylesheet" href="assets/css/style.min.css">
-
+    
+    <!--CDN Scroll Reveal  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <title>ONG | Resgastando Amor</title>
@@ -311,6 +313,28 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2000,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.home__title, .home__text, .home__btn, .about__h2, .about__text, .adoption__title,.deposition__title, .deposition__title, .question__title', {
+            delay: 400,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.home__img, .about__img2, .adoption__text, .deposition__text, .deposition__cards, .question__cards ', {
+            delay: 400,
+            origin: 'right'
+        });
+        ScrollReveal().reveal('.about__img1, .banner__text, .footer__container', {
+            delay: 400,
+            origin: 'bottom'
+        });
+    </script>
 </body>
 
 </html>
