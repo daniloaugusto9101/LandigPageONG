@@ -14,9 +14,9 @@
     transition: 0.6s
     min-height: 120px
 
-    &__sticky
-        min-height: 80px
-        padding: 0px
+    &--sticky
+        min-height: 60px
+        padding: 5px
 
     &__container
         // background-color: green
@@ -36,6 +36,10 @@
 
             &__img
                 width: 70px
+                transition: .6s
+                &--sticky
+                    width: 50px
+
             &__title
                 font-size: variables.$text_sz4
                 color: variables.$fourth-color
