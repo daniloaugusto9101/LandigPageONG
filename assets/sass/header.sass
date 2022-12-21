@@ -25,6 +25,7 @@
         justify-content: space-between
         flex-wrap: wrap
         padding: 0px 20px
+        position: relative
         
         .logo
             &__link
@@ -48,6 +49,11 @@
                 font-family: Baloo2-bold
         
         .navigation
+            // background-color: tomato
+            display: flex
+            justify-content: center
+            align-items: center
+            
             .menu
                 // background-color: green
                 height: 100%
@@ -64,4 +70,9 @@
                     font-weight: 600
                     &:hover
                         color: variables.$second-color
+                &__mobile
+                    font-size: 2em
+                    color: variables.$fourth-color
+                    cursor: pointer
+                    display: none
 

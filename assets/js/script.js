@@ -1,11 +1,11 @@
 
 // Efeito Menu Stivk
-window.addEventListener("scroll", ()=>{
-    let header = document.querySelector("header");
-    let logo__img = document.querySelector(".logo__img");
-    header.classList.toggle("header--sticky", window.scrollY > 0);
-    logo__img.classList.toggle("logo__img--sticky", window.scrollY > 0);
-});
+// window.addEventListener("scroll", ()=>{
+//     let header = document.querySelector("header");
+//     let logo__img = document.querySelector(".logo__img");
+//     header.classList.toggle("header--sticky", window.scrollY > 0);
+//     logo__img.classList.toggle("logo__img--sticky", window.scrollY > 0);
+// });
 
 // Exibe scrooll suave
 const menu = document.querySelectorAll('.menu a[href^="#"]')
@@ -30,10 +30,11 @@ function toScroll(event){
 
 
 // Abre e fecha menu mobolie
-// const navbar = document.querySelector('.nav-bar__container')
-// btn.addEventListener('click', function(){
-//     navbar.classList.toggle('active')
-// })
+const navbar = document.querySelector('.header__container')
+const btn = document.querySelector('.btn-mobile')
+btn.addEventListener('click', function(){
+    navbar.classList.toggle('active')
+})
 
 
 // Efeito abrir e fechar card de perguntas

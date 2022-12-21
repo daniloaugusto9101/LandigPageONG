@@ -15,8 +15,36 @@
                 &__title
                     display: none
         .navigation
+            // background-color: tomato
             .menu
-                display: none
+                position: absolute
+                top: 100px
+                right: 0
+                flex-direction: column
+                height: 100vh
+                gap: 0
+                background-color: black
+                display: block
+                transition: .5s
+                z-index: 1000
+                text-align: right
+                width: 0
+                overflow-y: hidden
+                visibility: hidden
+                &__link
+                    display: block
+                &__mobile
+                    display: block
+        &__container.active
+            .navigation
+                .menu
+                    width: 200px
+                    overflow-y: visible
+                    visibility: visible
+                
+
+
+
 
 @media (max-width: 720px)
     .home
@@ -93,7 +121,6 @@
             // text-align: center
         .cardP
             padding: 10px
-        &__header
 
     // footer
     .footer
