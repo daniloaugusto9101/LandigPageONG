@@ -34,50 +34,70 @@
     &__btn
         @include button
 
-// Slide imagens
-.adoption__conatainer
-    max-width: 1220px
-    width: 100%
-    // background-color: green
-    padding: 100px
+    // Slide imagens
+    &__carousel
+        width: 100%
+        // background-color: red
 
-.adoption__content
-    // local para espaço nos botoes de next e prev 
-    margin: 0 50px
-    overflow: hidden
-    height: 100%
-    padding: 50px 0
-    
-.swiper-pagination-bullet
-    background-color: red
-    opacity: 1
+    &__content
+        // local para espaço nos botoes de next e prev 
+        margin: 0 50px
+        overflow: hidden
+        height: 100%
+        // Local espaço da paginação
+        padding: 0 0 50px 0
+        // background-color: #fff
+        border-radius: 15px
 
-.card
-    display: grid
+        .card
+            position: relative
+            &__img
+                width: 100%
+            &__content
+                position: absolute
+                background-color: rgba(81, 0, 0, 0.799)
+                color: white
+                transition: .3s all
+                bottom: 8px
+                // padding: 10px
+                height: 0px
+                // height: 0px
+                // visibility: hidden
+                border-radius: 0 0 15px 15px
+            &:hover .card__content
+                bottom: 8px
+                height: 200px
+                padding: 10px
+                // border-radius: 0 0 20px 20px
+                // visibility: visible
+                // bottom: 8px
+    .swiper-button-next
+        right: 0
+        color: variables.$first-color
+        // font-family: 
+        // width: 10px
+        // font-size: 1px
+        // border: 2px solid black
+        // border-radius: 50%
+        // background-color: tomato
+        font-size: 25px
+        // background-color: red
+        font-family: FontAwesome
+    .swiper-button-prev
+        font-size: 25px
+        left: 0
+        color: variables.$first-color
+    .swiper-button-next:after
+        content: ''
+    .swiper-button-prev:after
+        content: ''
 
-.card_img
-    grid-column: 1
-    grid-row: 1/3
-    width: 100%
-    // align-self: flex-end
+    .swiper-pagination .swiper-pagination-bullet
+        background-color: variables.$first-color
+        width: 15px
+        height: 10px
+        border-radius: 20px
+        opacity: .8
+    .swiper-pagination .swiper-pagination-bullet-active
+        background-color: variables.$first-color
 
-
-.card__content
-    // overflow: hidden
-    // grid-column: 1
-    // grid-row: 2/3
-    // height: 0
-    background-color: rgba(81, 0, 0, 0.799)
-    color: white
-    // font-size: 20px
-    transition: .3s ease-in
-    align-self: flex-end
-
-.card:hover .card__content
-    // visibility: visible
-    // height: 100%
-    // padding: 10px
-.swiper-pagination-bullets
-    // background-color: red
-.swiper-pagination-bullet-active
-    background-color: black
