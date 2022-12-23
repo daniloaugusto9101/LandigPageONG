@@ -95,7 +95,7 @@ var swiper = new Swiper(".adoption__content", {
 //     duration: 2000,
 //     delay: 400
 // });
-
+// ScrollReveal().reveal('.home__title')
 // sr.reveal('.home__title, .home__text, .home__btn, .about__h2, .about__text, .adoption__title,.deposition__title, .deposition__title, .question__title', {
 //     delay: 400,
 //     origin: 'left'
